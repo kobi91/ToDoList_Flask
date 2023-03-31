@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styleh.css">
+    <title>Edit Task</title>
+</head>
+<body>
+    <h2>Edit Task</h2>
+    <form action="/edit_task" method="POST">
+        <input type="text" name="new_task" placeholder="{{ old_task }}" autofocus>
+        <input type="text" name="new_date" placeholder="{{ old_date }}" onfocus="(this.type='date')">
+        <input type="submit" value="Save Task">       
+   </form>
+   <a href="/mylist"><button type="button">Back</button></a> 
+    
+   {% if error %}
+       <p><strong>Error:</strong> {{ error }}
+   {% endif %}
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../static/style.css">
+     <title>TodoList</title>   
+</head>
+<body>
+     <div class="header">
+          <h2>To Do List</h2>
+          <form action="/add" method="POST">
+               <input type="text" name="task" placeholder="To do..." autofocus>
+               <input type="submit" value="Add Task" class="IButton">      
+               <input type="date" name="date">
+          </form>  
+          <a href="/delete"><button type="button" class="RButton">Delete Tasks</button></a> 
+          <a href="/logout"><button type="button" class="TButton">Logout</button></a>
+          
+          <form action="/sorting" method="POST">
+               <div class="sorting">
+               <label for="sort">Sorted by:</label>
+               <select name="sortedby" id="sort">
+                    <option value="Select">-- Select Option --</option>
+                    <option value="Name">-- Task Name --</option>
+                    <option value="Date">-- Date --</option>
+               </select> 
+               <input type="submit" value="Submit" class="SButton">   
+               </div>              
+          </form>  
+     </div>     
+     <ul>          
+          {% for k,v,m,n in tasks %}       
+               <div>
+               <form action="/delete_task" method="POST">    
+                    <a class="bold">{{k}}</a><br>
+                    {{v}}
+                    <input type="hidden" name="id" value="{{n}}">
+                    <input type="submit" value="&#215;" class="close">
+               </form>
+               <form action="/edit" method="POST">
+                    <input type="hidden" name="id" value="{{n}}">
+                    <input type="hidden" name="old_task" value="{{k}}">
+                    <input type="hidden" name="old_date" value="{{v}}">
+                    <input type="submit" value="Edit Task" class="edit">
+               </form>   
+               </div>        
+          {% endfor %}                                               
+     </ul>
+</body>
+</html>
+

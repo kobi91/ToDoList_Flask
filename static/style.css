@@ -1,0 +1,166 @@
+* {
+   box-sizing: border-box;
+  }
+   
+  ul {    
+   list-style-type: none;
+   padding: 0; 
+   margin: 0; 
+  }
+   
+  ul div {
+   cursor: pointer;
+   position: relative;
+   padding: 12px 8px 12px 40px;
+   background: #eee;
+   font-size: 18px;
+   transition: 0.2s;
+  }    
+   
+  ul div:nth-child(odd) {
+   background: #f9f9f9;
+  }
+   
+  ul div:hover {
+   background: #ddd;
+  }
+   
+  .header {
+   position: relative;
+   background-color: #312d2d;
+   padding: 4% 2%;
+   color: white;
+   text-align: center;
+  }
+   
+  .header:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+    
+  input {
+   margin: 0;
+   border: none;
+   border-radius: 0;
+   width: 75%;
+   padding: 10px;
+   float: left;
+   font-size: 16px;
+  }
+   
+  .IButton {
+   padding: 10px;
+   width: 25%;
+   background: #d9d9d9;
+   color: #555;
+   float: right;
+   text-align: center;
+   font-size: 16px;
+   cursor: pointer;
+   transition: 0.3s;
+   border-radius: 4px;
+  }
+
+  .SButton {
+   padding: 5px;
+   width: 12%;
+   margin-left: 1%;
+   background: #d9d9d9;
+   color: #555;
+   text-align: center;
+   font-size: 13px;
+   cursor: pointer;
+   transition: 0.3s;
+   border-radius: 4px;
+  }
+
+  .RButton {
+   padding: 10px;
+   width: 25%;
+   background: #d9d9d9;
+   color: #555;
+   float: right;
+   text-align: center;
+   font-size: 16px;
+   cursor: pointer;
+   transition: 0.3s;
+   border-radius: 4px;
+  }
+
+  .TButton {
+   position: absolute;
+   right: 0.5%;
+   top: 3%;
+   padding: 8px;
+   width: 12%;
+   background: #d9d9d9;
+   color: #555;
+   text-align: center;
+   font-size: 13px;
+   cursor: pointer;
+   transition: 0.3s;
+   border-radius: 4px;
+  }
+   
+  .RButton:hover {
+   background-color: #bbb;
+  }
+
+  .TButton:hover {
+   background-color: #bbb;
+  }
+
+  .IButton:hover {
+   background-color: #bbb;
+  }
+
+  .SButton:hover {
+   background-color: #bbb;
+  }
+
+  .bold {
+   font-weight: bold;
+   font-style: italic;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .close {
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 6%;
+   background: rgb(247, 241, 241);
+   font-size: 150%;
+   padding: 17px 20px 17px 20px;
+  }
+ 
+ .close:hover {
+   background-color: #210805;
+   color: white;
+  }
+
+  .sorting {
+   display: flex;
+   position: relative;
+   float: left;
+   width: 100%;
+   margin-left: 0;
+   margin-top: 2%;
+   font-size: 120%;
+  }
+
+  .edit {
+   position: absolute;
+   right: 6%;
+   top: 0;
+   width: 15%;
+   font-size: 85%;
+   background: rgb(247, 241, 241);
+   padding: 24px 26px 24px 26px;
+  }
+ 
+ .edit:hover {
+   background-color: #210805;
+   color: white;
+  }
