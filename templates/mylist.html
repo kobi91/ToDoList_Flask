@@ -4,16 +4,28 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
      <link rel="stylesheet" href="../static/style.css">
-     <title>TodoList</title>   
+     <title>TodoList</title>
 </head>
+
+<script>
+
+     $(function() {
+          $("#date_input").datepicker();
+     });
+        
+</script>
+
 <body>
      <div class="header">
           <h2>To Do List</h2>
           <form action="/add" method="POST">
                <input type="text" name="task" placeholder="To do..." autofocus>
                <input type="submit" value="Add Task" class="IButton">      
-               <input type="date" name="date">
+               <input type="text" name="date" id="date_input" placeholder="Date">
           </form>  
           <a href="/delete"><button type="button" class="RButton">Delete Tasks</button></a> 
           <a href="/logout"><button type="button" class="TButton">Logout</button></a>

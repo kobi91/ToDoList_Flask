@@ -11,9 +11,9 @@
   ul div {
    cursor: pointer;
    position: relative;
-   padding: 12px 8px 12px 40px;
+   padding: 10px 20px 10px 20px;
    background: #eee;
-   font-size: 18px;
+   font-size: 120%;
    transition: 0.2s;
   }    
    
@@ -40,17 +40,20 @@
   }
     
   input {
+   -webkit-appearance: none;
+   appearance: none;
+   font-weight: normal;
    margin: 0;
    border: none;
    border-radius: 0;
    width: 75%;
-   padding: 10px;
+   padding: 10px 20px 10px 20px;
    float: left;
    font-size: 16px;
   }
    
   .IButton {
-   padding: 10px;
+   padding: 10px 10px 10px 10px;
    width: 25%;
    background: #d9d9d9;
    color: #555;
@@ -63,8 +66,8 @@
   }
 
   .SButton {
-   padding: 5px;
-   width: 12%;
+   padding: 8px 10px 8px 10px;
+   width: 20%;
    margin-left: 1%;
    background: #d9d9d9;
    color: #555;
@@ -76,7 +79,7 @@
   }
 
   .RButton {
-   padding: 10px;
+   padding: 10px 10px 10px 10px;
    width: 25%;
    background: #d9d9d9;
    color: #555;
@@ -90,10 +93,10 @@
 
   .TButton {
    position: absolute;
-   right: 0.5%;
+   right: 2.5%;
    top: 3%;
-   padding: 8px;
-   width: 12%;
+   padding: 8px 10px 8px 10px;
+   width: 15%;
    background: #d9d9d9;
    color: #555;
    text-align: center;
@@ -129,10 +132,12 @@
    position: absolute;
    right: 0;
    top: 0;
-   width: 6%;
+   width: 12%;
    background: rgb(247, 241, 241);
    font-size: 150%;
-   padding: 17px 20px 17px 20px;
+   padding: 15.2px 15px 15.2px 15px;
+   border-radius: 0;
+   color: #555;
   }
  
  .close:hover {
@@ -147,17 +152,19 @@
    width: 100%;
    margin-left: 0;
    margin-top: 2%;
-   font-size: 120%;
+   font-size: 150%;
   }
 
   .edit {
    position: absolute;
-   right: 6%;
+   right: 12%;
    top: 0;
-   width: 15%;
-   font-size: 85%;
+   width: 25%;
+   font-size: 90%;
    background: rgb(247, 241, 241);
-   padding: 24px 26px 24px 26px;
+   padding: 21.5px 15px 21.5px 15px;
+   border-radius: 0;
+   color: #555;
   }
  
  .edit:hover {
